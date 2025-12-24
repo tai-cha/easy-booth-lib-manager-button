@@ -31,15 +31,22 @@ jobs:
         run: pnpm build
 
       - name: Pack Extension (Zip)
+        id: pack
         run: |
+          VERSION=${GITHUB_REF_NAME}
+          VERSION_SUFFIX=${VERSION//./_}
+          ZIP_NAME="easy-booth-lib-manager-button_${VERSION_SUFFIX}.zip"
+          
           cd dist
-          zip -r ../easy-booth-lib-button.zip ./*
+          zip -r "../$ZIP_NAME" ./*
+          
+          echo "zip_name=$ZIP_NAME" >> "$GITHUB_OUTPUT"
 
       - name: Upload Release Asset
         # use v2.4.2 cause v2.5.0 is not stable
         # https://github.com/softprops/action-gh-release/issues/704
         uses: softprops/action-gh-release@v2.4.2
         with:
-          files: easy-booth-lib-button.zip
+          files: ${{ steps.pack.outputs.zip_name }}
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
