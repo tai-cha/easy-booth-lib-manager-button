@@ -36,7 +36,9 @@ jobs:
           zip -r ../easy-booth-lib-button.zip ./*
 
       - name: Upload Release Asset
-        uses: softprops/action-gh-release@v2
+        # use v2.4.2 cause v2.5.0 is not stable
+        # https://github.com/softprops/action-gh-release/issues/704
+        uses: softprops/action-gh-release@v2.4.2
         with:
           files: easy-booth-lib-button.zip
         env:
