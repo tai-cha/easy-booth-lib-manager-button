@@ -21,6 +21,7 @@
     {
       "matches": [
         "*://accounts.booth.pm/library*",
+        "*://accounts.booth.pm/orders/*",
         "*://*.booth.pm/items/*",
         "*://booth.pm/items/*",
         "*://*.booth.pm/*/items/*",
