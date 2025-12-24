@@ -16,7 +16,7 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: 20
+          node-version: 22
           cache: 'npm' 
           # Note: Using 'npm' cache because pnpm setup might require extra step, 
           # but we can use pnpm directly if we install it.
