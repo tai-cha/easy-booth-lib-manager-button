@@ -1,4 +1,4 @@
-# Easy Booth Lib Button
+# Easy Booth Lib Manager Button
 
 BOOTHのライブラリ（購入履歴）や商品ページで、隠れているボタンを押しやすくするためのブラウザ拡張機能です。
 
@@ -25,14 +25,14 @@ BOOTHのライブラリ（購入履歴）や商品ページで、隠れている
 
 #### Chrome / Edge / Brave
 
-1. [Releases](https://github.com/taichan/easy-booth-lib-button/releases) から最新の `easy-booth-lib-manager-button.zip` をダウンロード・解凍します。
+1. [Releases](https://github.com/taichan/easy-booth-lib-manager-button/releases) から最新の `easy-booth-lib-manager-button.zip` をダウンロード・解凍します。
 2. `chrome://extensions` を開きます。
 3. 右上の「デベロッパーモード」をONにします。
 4. 「パッケージ化されていない拡張機能を読み込む」をクリックし、解凍したフォルダを選択します。
 
 #### Firefox
 
-1. [Releases](https://github.com/taichan/easy-booth-lib-button/releases) から最新の `easy-booth-lib-manager-button.zip` をダウンロードします。
+1. [Releases](https://github.com/taichan/easy-booth-lib-manager-button/releases) から最新の `easy-booth-lib-manager-button.zip` をダウンロードします。
 2. `about:debugging#/runtime/this-firefox` を開きます。
 3. "Load Temporary Add-on..." をクリックし、ダウンロードしたZIPファイルを選択します。
 
