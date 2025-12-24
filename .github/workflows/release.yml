@@ -14,12 +14,10 @@ jobs:
       - uses: actions/checkout@v4
 
       - name: Setup Node.js
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v5
         with:
           node-version: 22
-          cache: 'npm' 
-          # Note: Using 'npm' cache because pnpm setup might require extra step, 
-          # but we can use pnpm directly if we install it.
+          cache: 'pnpm' 
       
       - name: Install pnpm
         uses: pnpm/action-setup@v2
