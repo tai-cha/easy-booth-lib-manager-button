@@ -1,0 +1,25 @@
+{
+  "name": "easy-booth-lib-manager-button",
+  "version": "1.0.0",
+  "description": "Booth上で、Booth Library ManagerでDLするボタンを押しやすい位置に配置します",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build && rm -rf dist/.vite",
+    "preview": "vite preview"
+  },
+  "keywords": [
+    "chrome-extension",
+    "booth",
+    "firefox-addon",
+    "browser-extension"
+  ],
+  "author": "tai-cha",
+  "license": "MIT",
+  "devDependencies": {
+    "@crxjs/vite-plugin": "2.0.0-beta.33",
+    "@types/chrome": "^0.1.32",
+    "typescript": "^5.9.3",
+    "vite": "^7.3.0"
+  }
+}
