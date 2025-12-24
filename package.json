@@ -1,6 +1,6 @@
 {
   "name": "easy-booth-lib-manager-button",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Booth上で、Booth Library ManagerでDLするボタンを押しやすい位置に配置します",
   "type": "module",
   "scripts": {
