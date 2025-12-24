@@ -1,11 +1,12 @@
 {
   "manifest_version": 3,
   "name": "Easy Booth Lib Manager Button",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Booth上で、Booth Library ManagerでDLするボタンを押しやすい位置に配置します（現在日本語のみ対応）",
   "browser_specific_settings": {
     "gecko": {
-      "id": "easy-booth-lib-manager-button@taichan.site"
+      "id": "easy-booth-lib-manager-button@taichan.site",
+      "data_collection_permissions": "none"
     }
   },
   "icons": {
